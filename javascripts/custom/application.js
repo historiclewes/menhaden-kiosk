@@ -72,11 +72,20 @@ var Kiosk = (function($, window, document, undefined) {
     },
 
     // fetch News
-    getNews: function(feed_id) {
+    getNews: function(feed_id, limit) {
       var template = Handlebars.getTemplate('rss');
 
-      RSSRequest.getFeed(rssFeeds[feed_id], function(response) {
+      RSSRequest.getFeed(Kiosk.variables.rssFeeds[feed_id], limit, function(response) {
         Kiosk.util.updateScreen('#main-content', template(response));
+      });
+    },
+
+    // fetch News
+    getHomeNews: function(feed_id) {
+      var template = Handlebars.getTemplate('homepage_news');
+
+      RSSRequest.getFeed(Kiosk.variables.rssFeeds[feed_id], 4, function(response) {
+        Kiosk.util.updateScreen('.homepage-news', template(response));
       });
     },
 
@@ -186,7 +195,7 @@ var Kiosk = (function($, window, document, undefined) {
 
     // Application variables
     variables: {
-      kiosk_id: 436,
+      kiosk_id: 437,
       contentServer: 'http://www.historiclewes.org/',
 
       services: {

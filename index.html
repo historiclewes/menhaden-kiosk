@@ -6,6 +6,12 @@
   <link rel="stylesheet" href="stylesheets/normalize.css"/>
   <link rel="stylesheet" href="stylesheets/app.css"/>
   <script src="javascripts/vendor/custom.modernizr.js"></script>
+
+  <!--Load the AJAX API-->
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("feeds", "1");
+  </script>
 </head>
 <body>
 <div id="header">
@@ -23,20 +29,45 @@
 <script>document.write('<script src=' + ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') + '.js><\/script>')</script>
 <script src="javascripts/foundation/foundation.js"></script>
 <script src="javascripts/foundation/foundation.clearing.js"></script>
-<script src="javascripts/foundation/foundation.cookie.js"></script>
-<script src="javascripts/foundation/foundation.forms.js"></script>
 <script src="javascripts/foundation/foundation.reveal.js"></script>
-<script src="javascripts/foundation/foundation.topbar.js"></script>
+<script src="javascripts/foundation/foundation.orbit.js"></script>
 <script src="javascripts/vendor/handlebars.min.js"></script>
 <script src="javascripts/custom/drupal.js"></script>
 <script src="javascripts/custom/vimeo.js"></script>
 <script src="javascripts/custom/buoy.js"></script>
+<script src="javascripts/custom/rss.js"></script>
+<script src="javascripts/custom/helpers.js"></script>
 <script src="javascripts/custom/application.js"></script>
 <script src="javascripts/foundation/foundation.orbit.js"></script>
 <script src="templates/compiled/templates.js"></script>
-<script src="javascripts/custom/navigation.js"></script>
+<script>
+  $(document).ready(function() {
+    Kiosk.init();
+  });
 
-<script>$(document).foundation();</script>
+  $(document).foundation()
+      .foundation('orbit', {
+        timer_speed: 8000,
+        animation_speed: 500,
+        bullets: false,
+        stack_on_small: true,
+        container_class: 'orbit-container',
+        stack_on_small_class: 'orbit-stack-on-small',
+        next_class: 'orbit-next',
+        prev_class: 'orbit-prev',
+        timer_container_class: 'orbit-timer',
+        timer_paused_class: 'paused',
+        timer_progress_class: 'orbit-progress',
+        slides_container_class: 'orbit-slides-container',
+        bullets_container_class: 'orbit-bullets',
+        bullets_active_class: 'active',
+        slide_number_class: 'orbit-slide-number',
+        caption_class: 'orbit-caption',
+        active_slide_class: 'active',
+        orbit_transition_class: 'orbit-transitioning'
+      }
+  );
+</script>
 
 <div id="newsletter-signup" class="reveal-modal">
   <div class="small-10 columns">
