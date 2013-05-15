@@ -4,12 +4,4 @@ $(document).ready(function () {
     footer.find('.active').toggleClass('active inactive');
     $(this).toggleClass('active inactive');
   });
-
-  $("a.collections").click(function () {
-    footer.find('li.collection.inactive').toggleClass('inactive active ');
-
-  });
-
-
 });
-
