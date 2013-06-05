@@ -203,16 +203,16 @@ var Kiosk = (function($, window, document, undefined) {
         collections: 'kiosk/views/kiosk_nodes?display_id=block_2',
         homepage_slideshow: 'kiosk/views/kiosk_nodes?display_id=block_3',
         collections_slideshow: 'kiosk/views/kiosk_nodes?display_id=block_5',
-        search: 'kiosk/views/kiosk_nodes?display_id=block_4'
+        search: 'kiosk/views/kiosk_nodes?display_id=page_1'
       },
 
       rssFeeds: {
-        cnn_us: 'http://rss.cnn.com/rss/cnn_us.rss'
+        menhaden: 'https://news.google.com/news/feeds?hl=en&gl=us&q=menhaden&um=1&ie=UTF-8&output=rss'
       },
 
       vimeo: {
         'type': 'user',
-        'id': 'user1949213'
+        'id': 'user18747085'
       }
     }
   }
