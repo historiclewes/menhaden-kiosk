@@ -300,8 +300,7 @@ h2.block-title {
     padding: 0;
     margin: 20px 10px 20px 0;
   }
-
-  button.telescope-button {
+  input.telescope-button {
     border: none;
     background: none;
     @include box-shadow(none);
@@ -309,8 +308,9 @@ h2.block-title {
     background: url('../images/telescope.png') center right no-repeat;
     position: absolute;
     display: block;
-    top: 10px;
-    left: 170px;
+    top: -10px;
+    left: 184px;
+    width:35px;
 
   }
 
@@ -575,10 +575,10 @@ h2.block-title {
 
   .collection-slideshow {
     height: 345px;
-    margin:0 0 0 49px;
-    padding-top:47px;
+    margin: 0 0 0 49px;
+    padding-top: 47px;
     .orbit-container {
-      background-color:transparent;
+      background-color: transparent;
     }
 
     img {
@@ -644,9 +644,21 @@ h2.block-title {
   @include box-shadow(0 0 5px rgba(0, 0, 0, .4));
   margin: 15px;
   display: block;
+  height: 130px;
+
 }
+
+h4 {
+  max-height: 69px;
+  overflow: hidden;
+}
+
 //IDSABLE SLIDESHOW NAVIGATION ITEMS
 
 a.orbit-prev, a.orbit-next, .orbit-slide-number, .orbit-timer {
-  display:none;
+  display: none;
+}
+
+form {
+  margin:0;
 }
