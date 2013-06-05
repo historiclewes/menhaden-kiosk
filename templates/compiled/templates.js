@@ -164,7 +164,7 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   if(stack2 || stack2 === 0) { buffer += stack2; }
   buffer += "</h4>\n<p>"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.items),stack1 == null || stack1 === false ? stack1 : stack1[0])),stack1 == null || stack1 === false ? stack1 : stack1.description)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</p>\n<a href=\"#\" class=\"right collections meddon pointer-left\" onclick=\"Kiosk.getNews('cnn_us', 15); return false;\">Read</a>";
+    + "</p>\n<a href=\"#\" class=\"right collections meddon pointer-left\" onclick=\"Kiosk.getNews('menhaden', 15); return false;\">Read</a>";
   return buffer;
   });
 templates['navigation.hbs'] = template(function (Handlebars,depth0,helpers,partials,data) {
