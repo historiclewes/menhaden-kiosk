@@ -95,7 +95,7 @@ span.red-span {
   font-family: Arial;
   color: $red;
   line-height: 37px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 22px;
 }
 
@@ -221,7 +221,7 @@ h2.block-title {
 
   li {
     padding-top: 30px;
-    &.active, &:hover {
+    &.active {
       background-position: center -150px;
     }
   }
