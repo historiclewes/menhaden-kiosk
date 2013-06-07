@@ -103,7 +103,7 @@
 		</printtemplates>
 	</printing>
 	<screensaver enabled="true">
-		<application></application>
+		<application />
 		<app-mode>0</app-mode>
 		<idletime>120</idletime>
 		<interval>30</interval>
@@ -222,7 +222,7 @@
 	<touchscreen enable="true">
 		<layout>Natural Black</layout>
 		<language>0</language>
-		<key-repeat>true</key-repeat>
+		<key-repeat>false</key-repeat>
 		<delay-time>500</delay-time>
 		<repeat-rate>4</repeat-rate>
 		<loom-time>250</loom-time>
@@ -233,8 +233,9 @@
 		<position-top>0</position-top>
 		<transparence>5</transparence>
 		<autopopup>true</autopopup>
-		<autohide>false</autohide>
+		<autohide>true</autohide>
 		<floating>false</floating>
+		<url allowed="true">http://localhost:8082*</url>
 		<sound-effect>false</sound-effect>
 	</touchscreen>
 	<windowmanager>
@@ -1104,7 +1105,7 @@
 		<pass encrypted="true"></pass>
 		<idletime>300</idletime>
 		<connect-on-demand>false</connect-on-demand>
-		<connection></connection>
+		<connection />
 		<check-intranet>false</check-intranet>
 		<watch-ras-stats>false</watch-ras-stats>
 		<disable-net-logon>false</disable-net-logon>
@@ -1275,8 +1276,8 @@
 		<startpage>http://localhost:8082</startpage>
 		<altstartpage>file://$(SiteKioskPath)\HTML\startpage\start.htm</altstartpage>
 		<templateenabled>false</templateenabled>
-		<templatename></templatename>
-		<templatedeffilename></templatedeffilename>
+		<templatename />
+		<templatedeffilename />
 		<config-focused>false</config-focused>
 		<reset-browser-on-screensaver-start>true</reset-browser-on-screensaver-start>
 	</startpageconfig>
