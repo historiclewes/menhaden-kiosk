@@ -1,7 +1,7 @@
 // Define BuoyRequest
 var BuoyRequest = (function () {
   var getData = function(buoy_id, callback) {
-    Zepto.ajax(
+    $.ajax(
         {
           url: dataFeedUrl(buoy_id),
           type: 'GET',

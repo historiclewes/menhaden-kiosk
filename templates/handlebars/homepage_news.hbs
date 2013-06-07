@@ -1,3 +1,3 @@
 <h4>{{{ items.0.title }}}</h4>
 <p>{{ items.0.description }}</p>
-<a href="#" class="right collections meddon pointer-left" onclick="Kiosk.getNews('menhaden', 15); return false;">Read</a>
+<a href="#" class="right collections meddon pointer-left" onclick="javascript:window.open('{{ items.0.permalink }}', '', 'scrollbars=yes, width=800, height=550, top='+ Number((screen.width/2)-(800/2)) + ', left=' + Number((screen.height/2)-(550/2)) + '');">Read</a>
