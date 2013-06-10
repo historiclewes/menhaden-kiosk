@@ -32,7 +32,7 @@
 	<netaccess>
 		<online>true</online>
 		<scripts>true</scripts>
-		<applets>true</applets>
+		<applets>false</applets>
 		<background-music>true</background-music>
 		<download-new-activex>false</download-new-activex>
 		<videos>true</videos>
@@ -109,18 +109,18 @@
 		<interval>30</interval>
 		<random>false</random>
 		<fullscreen>false</fullscreen>
-		<hide-mouse>true</hide-mouse>
+		<hide-mouse>false</hide-mouse>
 		<capture-mouse>true</capture-mouse>
 		<return-homepage>true</return-homepage>
 		<clear-cache>true</clear-cache>
-		<check-direct-input>true</check-direct-input>
+		<check-direct-input>false</check-direct-input>
 		<disable-if-credit>true</disable-if-credit>
 		<delete-cookies>true</delete-cookies>
 		<reset-counter>100</reset-counter>
 		<welcome>false</welcome>
 		<welcome-page></welcome-page>
 		<url duration="140">http://www.provisio.com/link/WindowsIdle</url>
-		<adv-time>4</adv-time>
+		<adv-time>0</adv-time>
 		<adv-text>Powered by www.SITEKIOSK.com</adv-text>
 		<welcomeprotocol />
 		<welcomeurl />
@@ -198,7 +198,7 @@
 			<max-pagefile>90</max-pagefile>
 			<max-gdi-objects>9999</max-gdi-objects>
 		</mem-check>
-		<enable-activex-blocklist>true</enable-activex-blocklist>
+		<enable-activex-blocklist>false</enable-activex-blocklist>
 		<disable-accessibility>true</disable-accessibility>
 		<enable-automatic-restart>true</enable-automatic-restart>
 		<automatic-restart-time>360</automatic-restart-time>
@@ -1061,9 +1061,9 @@
 		<quit-button>false</quit-button>
 		<idle-deactivate>false</idle-deactivate>
 		<deactivate-time>60</deactivate-time>
-		<password>U90050005f0052000200d5000b0011</password>
+		<password>U8000e001d00080040002200d1007b0061</password>
 		<enable-general-password>true</enable-general-password>
-		<hotkey enabled="false" alt="true" ctrl="true" shift="false" ext="false">119</hotkey>
+		<hotkey enabled="true" alt="true" ctrl="true" shift="true" ext="false">8</hotkey>
 		<secondary-password enabled="false">
 			<password />
 			<quit>false</quit>
@@ -1276,8 +1276,8 @@
 		<startpage>http://localhost:8082</startpage>
 		<altstartpage>file://$(SiteKioskPath)\HTML\startpage\start.htm</altstartpage>
 		<templateenabled>false</templateenabled>
-		<templatename></templatename>
-		<templatedeffilename></templatedeffilename>
+		<templatename />
+		<templatedeffilename />
 		<config-focused>false</config-focused>
 		<reset-browser-on-screensaver-start>true</reset-browser-on-screensaver-start>
 	</startpageconfig>
@@ -1470,16 +1470,16 @@
 		<exclude>http://www.historiclewes.org*</exclude>
 		<block>
 			<generalforbidden>true</generalforbidden>
-			<erotic>false</erotic>
+			<erotic>true</erotic>
 			<extremism>true</extremism>
-			<gambling>false</gambling>
+			<gambling>true</gambling>
 			<bpjs>true</bpjs>
-			<chat>false</chat>
+			<chat>true</chat>
 			<drugs>true</drugs>
 			<anonymous>true</anonymous>
-			<email>false</email>
+			<email>true</email>
 			<translation-redirect>true</translation-redirect>
-			<kids>false</kids>
+			<kids>true</kids>
 		</block>
 	</plugin>
 	<plugin name="SiteDog" enabled="false" clsid="f0c667df-b700-11d3-a785-00400547c51f">
