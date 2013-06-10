@@ -159,14 +159,16 @@ helpers = helpers || Handlebars.helpers; data = data || {};
   var buffer = "", stack1, stack2, functionType="function", escapeExpression=this.escapeExpression;
 
 
-  buffer += "<h4>";
+  buffer += "<h4><a href=\""
+    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.items),stack1 == null || stack1 === false ? stack1 : stack1[0])),stack1 == null || stack1 === false ? stack1 : stack1.permalink)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
+    + "\" target=\"_blank\">";
   stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.items),stack1 == null || stack1 === false ? stack1 : stack1[0])),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "</h4>\n<p>"
+  buffer += "</a></h4>\n<p>"
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.items),stack1 == null || stack1 === false ? stack1 : stack1[0])),stack1 == null || stack1 === false ? stack1 : stack1.description)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</p>\n<a href=\"#\" class=\"right collections meddon pointer-left\" onclick=\"javascript:window.open('"
+    + "</p>\n<a href=\""
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.items),stack1 == null || stack1 === false ? stack1 : stack1[0])),stack1 == null || stack1 === false ? stack1 : stack1.permalink)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "', '', 'scrollbars=yes, width=800, height=550, top='+ Number((screen.width/2)-(800/2)) + ', left=' + Number((screen.height/2)-(550/2)) + '');\">Read</a>";
+    + "\" target=\"_blank\" class=\"right collections meddon pointer-left\">Read</a>";
   return buffer;
   });
 templates['navigation.hbs'] = template(function (Handlebars,depth0,helpers,partials,data) {
@@ -237,11 +239,11 @@ function program1(depth0,data) {
 function program2(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\n      <h3><a href=\"#\" onclick=\"javascript:window.open('";
+  buffer += "\n      <h3><a href=\"";
   if (stack1 = helpers.permalink) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.permalink; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + "', '', 'scrollbars=yes, width=800, height=550, top='+ Number((screen.width/2)-(800/2)) + ', left=' + Number((screen.height/2)-(550/2)) + '');\">";
+    + "\" target=\"_blank\">";
   if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   if(stack1 || stack1 === 0) { buffer += stack1; }
@@ -253,11 +255,11 @@ function program2(depth0,data) {
   if (stack1 = helpers.description) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.description; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "</p>\n\n      <p><a href=\"#\" onclick=\"javascript:window.open('";
+  buffer += "</p>\n\n      <p><a href=\"";
   if (stack1 = helpers.permalink) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.permalink; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + "', '', 'scrollbars=yes, width=800, height=550, top='+ Number((screen.width/2)-(800/2)) + ', left=' + Number((screen.height/2)-(550/2)) + '');\">Read More &raquo;</a></p>\n    ";
+    + "\" target=\"_blank\">Read More &raquo;</a></p>\n    ";
   return buffer;
   }
 

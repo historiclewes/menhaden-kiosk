@@ -1,12 +1,12 @@
 <div class="row">
   {{#if items.length}}
     {{#each items}}
-      <h3><a href="#" onclick="javascript:window.open('{{ permalink }}', '', 'scrollbars=yes, width=800, height=550, top='+ Number((screen.width/2)-(800/2)) + ', left=' + Number((screen.height/2)-(550/2)) + '');">{{{ title }}}</a></h3>
+      <h3><a href="{{ permalink }}" target="_blank">{{{ title }}}</a></h3>
       <time>{{ date }}</time>
 
       <p>{{{ description }}}</p>
 
-      <p><a href="#" onclick="javascript:window.open('{{ permalink }}', '', 'scrollbars=yes, width=800, height=550, top='+ Number((screen.width/2)-(800/2)) + ', left=' + Number((screen.height/2)-(550/2)) + '');">Read More &raquo;</a></p>
+      <p><a href="{{ permalink }}" target="_blank">Read More &raquo;</a></p>
     {{/each}}
   {{/if}}
 </div>
