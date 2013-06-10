@@ -164,9 +164,10 @@ helpers = helpers || Handlebars.helpers; data = data || {};
     + "\" target=\"_blank\">";
   stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.items),stack1 == null || stack1 === false ? stack1 : stack1[0])),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
   if(stack2 || stack2 === 0) { buffer += stack2; }
-  buffer += "</a></h4>\n<p>"
-    + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.items),stack1 == null || stack1 === false ? stack1 : stack1[0])),stack1 == null || stack1 === false ? stack1 : stack1.description)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</p>\n<a href=\""
+  buffer += "</a></h4>\n<p>";
+  stack2 = ((stack1 = ((stack1 = ((stack1 = depth0.items),stack1 == null || stack1 === false ? stack1 : stack1[0])),stack1 == null || stack1 === false ? stack1 : stack1.description)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1);
+  if(stack2 || stack2 === 0) { buffer += stack2; }
+  buffer += "</p>\n<a href=\""
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.items),stack1 == null || stack1 === false ? stack1 : stack1[0])),stack1 == null || stack1 === false ? stack1 : stack1.permalink)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\" target=\"_blank\" class=\"right collections meddon pointer-left\">Read</a>";
   return buffer;
