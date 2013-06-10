@@ -18,7 +18,7 @@
 		<ie9-gpu-rendering enabled="true" />
 		<antisabotage enabled="true" />
 		<prevent-foreground enabled="false" />
-		<max-browserwindows>2</max-browserwindows>
+		<max-browserwindows>1</max-browserwindows>
 		<shutdown-list>
 			<shutdown-entry>
 				<action>0</action>
@@ -39,8 +39,8 @@
 		<activex>true</activex>
 		<clear-cache-shutdown>false</clear-cache-shutdown>
 		<clear-cache-midnight>true</clear-cache-midnight>
-		<no-script-errors>false</no-script-errors>
-		<no-http-uploads>false</no-http-uploads>
+		<no-script-errors>true</no-script-errors>
+		<no-http-uploads>true</no-http-uploads>
 	</netaccess>
 	<email enabled="false">
 		<action>0</action>
@@ -163,7 +163,7 @@
 		</activator>
 	</screensaver-activators>
 	<security>
-		<cd-lock>false</cd-lock>
+		<cd-lock>true</cd-lock>
 		<block-removable-storage>false</block-removable-storage>
 		<block-copy-move>true</block-copy-move>
 		<watchdog>true</watchdog>
@@ -1080,14 +1080,14 @@
 		<style>2</style>
 		<show-address-box>true</show-address-box>
 		<anim-url>http://www.provisio.com/en-US/</anim-url>
-		<hidemode>0</hidemode>
+		<hidemode>1</hidemode>
 		<show-window-bar>false</show-window-bar>
 		<show-external-windows>false</show-external-windows>
 		<hide-window-bar-if-fullscreen>false</hide-window-bar-if-fullscreen>
 		<hide-scrollbars-in-fullscreen>false</hide-scrollbars-in-fullscreen>
 		<hide-taskbar-in-fullscreen>false</hide-taskbar-in-fullscreen>
 		<show-logout-button>true</show-logout-button>
-		<new-windows-maximized>false</new-windows-maximized>
+		<new-windows-maximized>true</new-windows-maximized>
 		<taskbar-notification-area enabled="false">
 			<restricted>false</restricted>
 		</taskbar-notification-area>
@@ -1276,8 +1276,8 @@
 		<startpage>http://localhost:8082</startpage>
 		<altstartpage>file://$(SiteKioskPath)\HTML\startpage\start.htm</altstartpage>
 		<templateenabled>false</templateenabled>
-		<templatename />
-		<templatedeffilename />
+		<templatename></templatename>
+		<templatedeffilename></templatedeffilename>
 		<config-focused>false</config-focused>
 		<reset-browser-on-screensaver-start>true</reset-browser-on-screensaver-start>
 	</startpageconfig>
