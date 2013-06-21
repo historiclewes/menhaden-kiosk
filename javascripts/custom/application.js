@@ -19,6 +19,14 @@ var Kiosk = (function($, window, document, undefined) {
           Kiosk.getSearchResults();
         }
       });
+
+      $('#footer-navigation li').not(':first').addClass('inactive');
+      $('#footer-navigation li').first().addClass('active');
+
+      $('#footer-navigation li a').bind('click', function() {
+        $(this).parent('li').addClass('active').removeClass('inactive');
+        $('#footer-navigation li a').not(this).parent('li').addClass('inactive').removeClass('active');
+      });
     },
 
     // generic function to call and load local HTML files with optional Handlebars components
