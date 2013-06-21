@@ -112,9 +112,16 @@ span.red-span {
 
 }
 
-h2.block-title {
+
+h2.block-title, h2.red-header a {
   color: $red;
   font-size: 18px;
+}
+h2.red-header a  { font-size:24px;}
+.block-radius {
+  border: dotted 2px $brown;
+  @include border-radius(10px);
+
 }
 
 .block-radius {
@@ -347,7 +354,7 @@ h2.block-title {
 #videos-cta, #history-cta {
   height: 200px;
 
-  a {
+  a.meddon {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -358,7 +365,7 @@ h2.block-title {
 
 #videos-cta {
   background: url('../images/videos.png') left 20px no-repeat;
-  a {
+  a.meddon {
     background: url('../images/pointer-right.png') center left no-repeat;
     padding-left: 40px;
     right: 35px;
@@ -367,7 +374,7 @@ h2.block-title {
 
 #history-cta {
   background: url('../images/history.png') left 85px no-repeat;
-  a {
+  a.meddon {
     padding-right: 40px;
 
     background: url('../images/pointer-left.png') center right no-repeat;
