@@ -4,4 +4,10 @@ $(document).ready(function () {
     footer.find('.active').toggleClass('active inactive');
     $(this).toggleClass('active inactive');
   });
+
+
+  $('#homepage-cta').click(function () {
+    window.location = $(this).find("a").attr("href");
+    return false;
+  });
 });
