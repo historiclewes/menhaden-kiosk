@@ -217,14 +217,14 @@ var Kiosk = (function($, window, document, undefined) {
     // Application variables
     variables: {
       kiosk_id: 437,
-      contentServer: 'http://www.historiclewes.org/',
+      contentServer: 'https://www.historiclewes.org/',
 
       services: {
-        node: 'kiosk/views/kiosk_nodes?display_id=block_1',
-        collections: 'kiosk/views/kiosk_nodes?display_id=block_2',
-        homepage_slideshow: 'kiosk/views/kiosk_nodes?display_id=block_3',
-        collections_slideshow: 'kiosk/views/kiosk_nodes?display_id=block_5',
-        search: 'kiosk/views/kiosk_nodes?display_id=page_1'
+        node: 'kiosk/node/',
+        collections: 'kiosk/collections/',
+        homepage_slideshow: 'kiosk/homeslider/',
+        collections_slideshow: 'kiosk/collections-slide/',
+        search: 'kiosk/search/'
       },
 
       rssFeeds: {

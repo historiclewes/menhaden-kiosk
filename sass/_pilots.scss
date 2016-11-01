@@ -659,6 +659,16 @@ h4 {
   overflow: hidden;
 }
 
+.slideshow > .orbit-container .orbit-slides-container {
+  >* {
+    text-align: center;
+  }
+  img {
+    display: inline-block !important;
+    max-height: 270px;
+  }
+}
+
 //IDSABLE SLIDESHOW NAVIGATION ITEMS
 
 a.orbit-prev, a.orbit-next, .orbit-slide-number, .orbit-timer {
